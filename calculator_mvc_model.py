@@ -16,5 +16,7 @@ class Calculator:
         return result
 
     def division(self):
+        if self.number2 == 0:
+            raise ValueError("Ділення на нуль неможливе")
         result = self.number1 / self.number2
         return result
